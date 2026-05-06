@@ -1,0 +1,5 @@
+node_modules/
+decks/*.pptx
+decks/*.pdf
+decks/slide-*.jpg
+.DS_Store

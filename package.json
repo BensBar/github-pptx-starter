@@ -1,0 +1,13 @@
+{
+  "name": "github-pptx-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starter kit for building on-brand GitHub .pptx decks with PptxGenJS + Copilot.",
+  "scripts": {
+    "example": "node decks/example-deck.js",
+    "qa": "python3 -m markitdown decks/example.pptx"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}
