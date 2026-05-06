@@ -8,7 +8,7 @@ const path = require("path");
 const pres = new pptxgen();
 pres.layout = "LAYOUT_16x9"; // 10" x 5.625"
 pres.title = "GitHub PPTX Starter — Example";
-pres.author = "GitHub Solutions Engineering";
+pres.author = "GitHub PPTX Starter";
 
 // Brand assets
 const assetsDir = path.resolve(__dirname, "../.copilot/assets");
@@ -139,7 +139,7 @@ s5.addText("Ship the deck.", {
   fontFace: FONT_HEAD, align: "left", margin: 0,
 });
 
-s5.addText("brand.github.com  ·  github.com/BensBar/bssobs", {
+s5.addText("brand.github.com", {
   x: 0.5, y: 3.4, w: 9, h: 0.5,
   fontSize: 14, color: GH.muted,
   fontFace: FONT_BODY, align: "left", margin: 0,

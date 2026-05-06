@@ -95,4 +95,4 @@ Full details in the skill file.
 
 ---
 
-Built for GitHub Solutions Engineers. Skill maintained in [BensBar/bssobs](https://github.com/BensBar/bssobs) (the canonical copy lives there; this starter is a snapshot for sharing).
+Built for anyone making GitHub-branded `.pptx` decks. All brand assets and design patterns are sourced from the public [brand.github.com](https://brand.github.com).

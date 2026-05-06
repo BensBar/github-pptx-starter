@@ -1,9 +1,9 @@
 # Skill: GitHub Presentation Builder
 
 ## Purpose
-Generate GitHub-branded `.pptx` presentations using PptxGenJS (Node.js). Produces polished, on-brand slide decks for customer meetings, QBRs, demos, and internal presentations.
+Generate GitHub-branded `.pptx` presentations using PptxGenJS (Node.js). Produces polished, on-brand slide decks for customer meetings, demos, reviews, and general presentations.
 
-**Reference deck:** `Executive Pitch Deck - New Narrative v4.PPTX` — the official GitHub FY26 executive pitch deck. All design patterns below are derived from this deck and brand.github.com.
+All design patterns and brand assets below are derived from the public GitHub brand guidelines at [brand.github.com](https://brand.github.com).
 
 ## Toolchain
 
@@ -20,7 +20,7 @@ pip3 install "markitdown[pptx]"
 
 ## Official Theme: "GitHub 2025"
 
-Extracted from the Executive Pitch Deck. This is the actual color scheme used by GitHub's marketing and field teams.
+Color palette and typography derived from [brand.github.com](https://brand.github.com).
 
 ```javascript
 const GH = {
@@ -86,9 +86,9 @@ The official deck is authored at 40"×22.5" (4× standard 16:9). All sizes below
 
 **Pick one mode and stay in it for the entire deck.** Do not mix dark and light content slides.
 
-The official pitch deck uses **dark mode throughout** — `0C1116` (dk1) background on all slides with white (lt1) text. One slide (12) uses `000239` (deep indigo) for variety.
+Default to **dark mode throughout** — `0C1116` (dk1) background on all slides with white (lt1) text. Use deep indigo `000239` for occasional variety.
 
-#### Dark mode (default — matches official deck)
+#### Dark mode (default)
 - **All slides**: background `0C1116`, text `FFFFFF`
 - Subtitle/muted text: `B0BAC3` (dk2)
 - Accent numbers: `5EEC83` (green)
@@ -191,14 +191,14 @@ const path = require("path");
 const pres = new pptxgen();
 pres.layout = "LAYOUT_16x9";  // 10" x 5.625"
 pres.title = "Your Title";
-pres.author = "GitHub Solutions Engineering";
+pres.author = "GitHub PPTX Starter";
 
 // Official brand assets
 const assetsDir = path.resolve(__dirname, "../../.copilot/assets");
 const logoWhite = path.join(assetsDir, "github-invertocat-white.png");
 const logoBlack = path.join(assetsDir, "github-invertocat-black.png");
 
-// GitHub 2025 theme (from Executive Pitch Deck)
+// GitHub 2025 theme
 const GH = {
   black: "0C1116", white: "FFFFFF", muted: "B0BAC3", darkSurface: "20262C",
   green: "5EEC83", yellow: "D8BD0E", red: "FE4B25", pink: "FF4AC0",
@@ -234,7 +234,7 @@ pres.writeFile({ fileName: "output.pptx" });
 
 ## Slide Layout Catalog
 
-Based on the official deck's 26 layouts. Use these names as mental models when designing slides:
+Use these layout types as mental models when designing slides:
 
 | Layout type | Description | When to use |
 |---|---|---|

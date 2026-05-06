@@ -16,7 +16,7 @@ This repository is a starter kit for building on-brand GitHub `.pptx` decks.
 
 - Write generated decks to `decks/`.
 - Use `LAYOUT_16x9` (10" × 5.625").
-- Pick **dark mode or light mode** and keep it consistent for the entire deck. Default to dark mode (matches the official Executive Pitch Deck).
+- Pick **dark mode or light mode** and keep it consistent for the entire deck. Default to dark mode.
 - Reference brand assets from `.copilot/assets/` using `path.resolve(__dirname, "../.copilot/assets", filename)`.
 - After generating, run the QA pipeline from the skill file (`markitdown` text extraction at minimum). Fix any leftover placeholders, overflow, or contrast issues, then re-render.
 
